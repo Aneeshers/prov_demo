@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Provenance · Induction Heads, Compressed</title>
+    <meta name="description" content="A research trajectory captured by Provenance: A. Iyer (MIT CSAIL) on induction-head compression in 2-layer attention-only models." />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css" />
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js"
+            onload="renderMathInElement(document.body, {delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}]});"></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <div class="brand">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-title">Provenance</span>
+          <span class="brand-sub">/ trajectory · induction-heads-2L</span>
+        </div>
+        <div class="filter-chips" id="filter-chips">
+          <button class="filter-chip active" data-filter="all">all</button>
+          <button class="filter-chip" data-filter="turns">turns</button>
+          <button class="filter-chip" data-filter="code">code</button>
+          <button class="filter-chip" data-filter="runs">runs</button>
+          <button class="filter-chip" data-filter="plots">plots</button>
+          <button class="filter-chip" data-filter="paper">paper</button>
+          <button class="filter-chip" data-filter="annotations">notes</button>
+        </div>
+      </div>
+    </header>
+
+    <div class="shell">
+      <aside class="toc-rail" aria-label="Acts">
+        <div class="toc-rail-label">Trajectory</div>
+        <ol id="toc-list"></ol>
+      </aside>
+
+      <main class="main">
+        <section class="header" id="trajectory-header"></section>
+
+        <section class="nav-blurb" id="nav-blurb"></section>
+
+        <section class="researcher-card" id="researcher-card"></section>
+
+        <figure class="hero-figure" id="hero-figure"></figure>
+        <div class="abstract-box" id="abstract-id"></div>
+        <section class="stat-strip" id="stats-id"></section>
+
+        <details class="repo-tree" id="repo-tree" open>
+          <summary>Repository · induction-heads-2l <span style="color: var(--muted); font-weight: 400;" id="repo-summary"></span></summary>
+          <div class="repo-tree-body" id="repo-tree-body"></div>
+        </details>
+
+        <section class="prov-graph" id="prov-graph"></section>
+
+        <section>
+          <h2 style="font-size: 0.95rem; margin: 16px 0 8px;">Reading trail</h2>
+          <div class="reading-trail" id="reading-trail"></div>
+        </section>
+
+        <section id="acts"></section>
+
+        <section class="wide-surface" id="commit-feed-section">
+          <h2>Commit feed <span class="count" id="commit-feed-count"></span></h2>
+          <div id="commit-feed"></div>
+        </section>
+
+        <section class="wide-surface" id="session-index-section">
+          <h2>Session index <span class="count" id="session-index-count"></span></h2>
+          <div id="session-index"></div>
+        </section>
+
+        <section class="wide-surface" id="runs-section">
+          <h2>All wandb runs <span class="count" id="runs-count"></span></h2>
+          <div id="runs-table-wrap"></div>
+        </section>
+
+        <section class="wide-surface" id="paper-edits-section">
+          <h2>Paper edit timeline <span class="count" id="paper-edits-count"></span></h2>
+          <div id="paper-edit-timeline"></div>
+        </section>
+
+        <section class="wide-surface" id="annotations-section">
+          <h2>Annotation log <span class="count" id="annotations-count"></span></h2>
+          <div id="annotation-log"></div>
+        </section>
+
+        <section class="wide-surface" id="repro-section">
+          <h2>Reproducibility</h2>
+          <div id="repro" class="prose"></div>
+        </section>
+
+        <blockquote class="reflections" id="reflections"></blockquote>
+
+        <footer class="site-footer" id="site-footer"></footer>
+      </main>
+
+      <aside class="gutter-rail" aria-label="Marginalia">
+        <div id="gutter"></div>
+      </aside>
+    </div>
+
+    <script src="content/meta.js"></script>
+    <script src="content/repo-tree.js"></script>
+    <script src="content/sessions.js"></script>
+    <script src="content/commits.js"></script>
+    <script src="content/runs.js"></script>
+    <script src="content/plots.js"></script>
+    <script src="content/paper-edits.js"></script>
+    <script src="content/annotations.js"></script>
+    <script src="content/trajectory.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
